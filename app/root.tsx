@@ -52,8 +52,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Hello, {name}</h1>
-        <p>This is a custom storefront powered by Hydrogen</p>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
@@ -63,10 +61,10 @@ export default function App() {
 }
 
 const LAYOUT_QUERY = `#graphql
-  query layout {
+query layout {
     shop {
-      name
-      description
+        name
+        description
     }
-  }
+}
 `;

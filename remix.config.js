@@ -1,4 +1,4 @@
-/** @type {import('@remix-run/dev').AppConfig} */
+/** @type {import("@remix-run/dev").AppConfig} */
 module.exports = {
   appDirectory: 'app',
   ignoredRouteFiles: ['**/.*'],
@@ -16,4 +16,7 @@ module.exports = {
   serverModuleFormat: 'esm',
   serverPlatform: 'neutral',
   serverMinify: process.env.NODE_ENV === 'production',
+  future: {
+    unstable_tailwind: true,
+  },
 };
